@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>R3Utility.ObservableCollections</id>
+    <version>0.3.1</version>
+    <authors>zerodev1200</authors>
+    <icon>icon.png</icon>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/zerodev1200/R3Utility</projectUrl>
+    <description>A utility library for Cysharp/R3 and Cysharp/ObservableCollections, with a focus on property binding.</description>
+    <repository type="git" url="https://github.com/zerodev1200/R3Utility" commit="6df79a36f8102b0ef1f64a67c823d1e675538817" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="ObservableCollections" version="3.3.3" exclude="Build,Analyzers" />
+        <dependency id="ObservableCollections.R3" version="3.3.3" exclude="Build,Analyzers" />
+        <dependency id="R3" version="1.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net9.0">
+        <dependency id="ObservableCollections" version="3.3.3" exclude="Build,Analyzers" />
+        <dependency id="ObservableCollections.R3" version="3.3.3" exclude="Build,Analyzers" />
+        <dependency id="R3" version="1.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="ObservableCollections" version="3.3.3" exclude="Build,Analyzers" />
+        <dependency id="ObservableCollections.R3" version="3.3.3" exclude="Build,Analyzers" />
+        <dependency id="R3" version="1.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="ObservableCollections" version="3.3.3" exclude="Build,Analyzers" />
+        <dependency id="ObservableCollections.R3" version="3.3.3" exclude="Build,Analyzers" />
+        <dependency id="R3" version="1.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>
