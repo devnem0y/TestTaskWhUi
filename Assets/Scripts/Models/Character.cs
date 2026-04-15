@@ -1,34 +1,77 @@
 ﻿using System;
-using System.Collections.Generic;
+using ObservableCollections;
+using R3;
 using UnityEngine;
 
 [Serializable]
-public class Character
+public class Character : ICharacter
 {
-    private string _name;
-    private int _hp;
-    private int _armor;
-    private Sprite _partyIcon;
-    private Sprite _avatar;
+    private readonly string _name;
+    private readonly int _hp;
+    private readonly int _armor;
+    private readonly int _maxHp;
+    private readonly int _maxArmor;
+    private readonly Sprite _partyIcon;
+    private readonly Sprite _avatar;
     
-    private int _maxHp;
-    private int _maxArmor;
-    private List<Ability> _abilities;
-    private List<Modification> _modifications;
+    private readonly ObservableList<Ability> _abilities;
+    private readonly ObservableList<Modification> _modifications;
+    
+    public ReadOnlyReactiveProperty<string> Name { get; }
+    public ReadOnlyReactiveProperty<int> HP { get; }
+    public ReadOnlyReactiveProperty<int> MaxHP { get; }
+    public ReadOnlyReactiveProperty<int> Armor { get; }
+    public ReadOnlyReactiveProperty<int> MaxArmor { get; }
+    public ReadOnlyReactiveProperty<Sprite> PartyIcon { get; }
+    public ReadOnlyReactiveProperty<Sprite> Avatar { get; }
+    public ReadOnlyReactiveProperty<string> HealthDisplay { get; }
+    public IObservableCollection<Ability> Abilities => _abilities;
+    public IObservableCollection<Modification> Modifications => _modifications;
+    
+    public event Action<Ability> OnAbilityModified;
     
     public Character(CharacterConfig characterConfig, AbilitiesConfig abilitiesConfig, ModificationsConfig modificationsConfig)
     {
         _name = characterConfig.Name;
+        Name = new ReactiveProperty<string>(_name);
+        
         _hp = characterConfig.Hp;
+        HP = new ReactiveProperty<int>(_hp);
+        
         _armor = characterConfig.Armor;
+        Armor = new ReactiveProperty<int>(_armor);
         
         _maxHp = _hp;
         _maxArmor = _armor;
         
+        MaxHP = new ReactiveProperty<int>(_maxHp);
+        MaxArmor = new ReactiveProperty<int>(_maxArmor);
+        
         _avatar = characterConfig.Avatar;
+        Avatar = new ReactiveProperty<Sprite>(_avatar);
+        
         _partyIcon = characterConfig.PartyIcon;
+        PartyIcon = new ReactiveProperty<Sprite>(_partyIcon);
 
-        _abilities = new List<Ability>(abilitiesConfig.GetAbilities(characterConfig.AbilitySize));
-        _modifications = new List<Modification>(modificationsConfig.GetModifications());
+        _abilities = new ObservableList<Ability>(abilitiesConfig.GetAbilities(characterConfig.AbilitySize));
+        _modifications = new ObservableList<Modification>(modificationsConfig.GetModifications());
+
+        HealthDisplay = HP.CombineLatest(MaxHP, (current, max) => $"{current}/{max}")
+            .ToReadOnlyReactiveProperty();
+    }
+    
+    public bool ApplyModificationToAbility(Ability ability, Modification modification)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void RemoveModificationFromAbility(Ability ability)
+    {
+        throw new NotImplementedException();
+    }
+    
+    private bool CanApplyModification(Ability ability, Modification modification)
+    {
+        throw new NotImplementedException();
     }
 }
