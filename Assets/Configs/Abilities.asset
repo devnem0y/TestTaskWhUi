@@ -15,4 +15,4 @@ MonoBehaviour:
   abilities:
   - _name: Ability1
     _icon: {fileID: 0}
-    _modificationTypes: 0000000002000000
+    _compatibleModificationTypes: 0000000001000000
