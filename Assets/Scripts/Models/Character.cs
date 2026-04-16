@@ -62,16 +62,28 @@ public class Character : ICharacter
     
     public bool ApplyModificationToAbility(Ability ability, Modification modification)
     {
-        throw new NotImplementedException();
+        if (!CanApplyModification(ability, modification)) return false;
+
+        ability.AppliedModification = modification;
+        _modifications.Remove(modification);
+        
+        OnAbilityModified?.Invoke(ability);
+        return true;
     }
 
     public void RemoveModificationFromAbility(Ability ability)
     {
-        throw new NotImplementedException();
+        var modification = ability.AppliedModification;
+        if (modification == null) return;
+
+        ability.AppliedModification = null;
+        _modifications.Add(modification);
+
+        OnAbilityModified?.Invoke(ability);
     }
     
     private bool CanApplyModification(Ability ability, Modification modification)
     {
-        throw new NotImplementedException();
+        return ability.AppliedModification == null && ability.CompatibleModificationTypes.Contains(modification.Type);
     }
 }

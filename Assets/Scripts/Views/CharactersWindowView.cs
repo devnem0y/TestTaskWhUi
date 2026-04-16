@@ -1,4 +1,6 @@
-﻿public class CharactersWindowView
+﻿using UnityEngine;
+
+public class CharactersWindowView : MonoBehaviour
 {
         
 }

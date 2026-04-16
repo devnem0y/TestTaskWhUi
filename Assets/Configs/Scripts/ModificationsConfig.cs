@@ -7,7 +7,7 @@ public class ModificationsConfig : ScriptableObject
 {
     [SerializeField] private List<Modification> _modifications;
 
-    public List<Modification> GetModifications()
+    public IEnumerable<Modification> GetModifications()
     {
         if (_modifications == null || _modifications.Count == 0)
             return new List<Modification>();
