@@ -7,8 +7,6 @@ using UnityEngine;
 
 public class CharacterViewModel : IDisposable
 {
-    private readonly Character _model;
-    
     public ReadOnlyReactiveProperty<string> Name { get; }
     public ReadOnlyReactiveProperty<int> HP { get; }
     public ReadOnlyReactiveProperty<int> MaxHP { get; }
@@ -20,6 +18,8 @@ public class CharacterViewModel : IDisposable
     
     public IObservableCollection<AbilityViewModel> Abilities { get; }
     public IObservableCollection<ModificationViewModel> Modifications { get; }
+    
+    public Character Model { get; }
 
     private readonly CompositeDisposable _disposables = new ();
     private readonly ObservableList<AbilityViewModel> _abilityViewModels;
@@ -27,16 +27,16 @@ public class CharacterViewModel : IDisposable
 
     public CharacterViewModel(Character model)
     {
-        _model = model;
+        Model = model;
         
-        Name = _model.Name;
-        HP = _model.HP;
-        MaxHP = _model.MaxHP;
-        Armor = _model.Armor;
-        MaxArmor = _model.MaxArmor;
-        PartyIcon = _model.PartyIcon;
-        Avatar = _model.Avatar;
-        HealthDisplay = _model.HealthDisplay;
+        Name = Model.Name;
+        HP = Model.HP;
+        MaxHP = Model.MaxHP;
+        Armor = Model.Armor;
+        MaxArmor = Model.MaxArmor;
+        PartyIcon = Model.PartyIcon;
+        Avatar = Model.Avatar;
+        HealthDisplay = Model.HealthDisplay;
         
         _abilityViewModels = new ObservableList<AbilityViewModel>();
         _modificationViewModels = new ObservableList<ModificationViewModel>();
@@ -50,12 +50,12 @@ public class CharacterViewModel : IDisposable
 
     private void InitializeCollections()
     {
-        foreach (var ability in _model.Abilities)
+        foreach (var ability in Model.Abilities)
         {
             _abilityViewModels.Add(new AbilityViewModel(ability));
         }
 
-        foreach (var modification in _model.Modifications)
+        foreach (var modification in Model.Modifications)
         {
             _modificationViewModels.Add(new ModificationViewModel(modification));
         }
@@ -63,8 +63,8 @@ public class CharacterViewModel : IDisposable
 
     private void SubscribeToCollectionChanges()
     {
-        _model.Abilities.CollectionChanged += OnAbilitiesCollectionChanged;
-        _model.Modifications.CollectionChanged += OnModificationsCollectionChanged;
+        Model.Abilities.CollectionChanged += OnAbilitiesCollectionChanged;
+        Model.Modifications.CollectionChanged += OnModificationsCollectionChanged;
     }
     
     private void OnAbilitiesCollectionChanged(in NotifyCollectionChangedEventArgs<Ability> e)
@@ -150,8 +150,8 @@ public class CharacterViewModel : IDisposable
 
     public void Dispose()
     {
-        _model.Abilities.CollectionChanged -= OnAbilitiesCollectionChanged;
-        _model.Modifications.CollectionChanged -= OnModificationsCollectionChanged;
+        Model.Abilities.CollectionChanged -= OnAbilitiesCollectionChanged;
+        Model.Modifications.CollectionChanged -= OnModificationsCollectionChanged;
         
         foreach (var abilityVm in _abilityViewModels) abilityVm.Dispose();
         foreach (var modificationVm in _modificationViewModels) modificationVm.Dispose();
