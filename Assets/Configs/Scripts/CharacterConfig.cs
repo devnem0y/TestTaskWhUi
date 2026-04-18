@@ -19,6 +19,6 @@ public class CharacterConfig
     [SerializeField] private Sprite _partyIcon;
     public Sprite PartyIcon => _partyIcon;
     
-    [SerializeField] private Sprite _avatar;
-    public Sprite Avatar => _avatar;
+    [SerializeField] private Sprite _portrait;
+    public Sprite Portrait => _portrait;
 }

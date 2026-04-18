@@ -1,18 +1,17 @@
 ﻿using System;
 using ObservableCollections;
-using R3;
 using UnityEngine;
 
 public interface ICharacter
 {
-    public ReadOnlyReactiveProperty<string> Name { get; }
-    public ReadOnlyReactiveProperty<int> HP { get; }
-    public ReadOnlyReactiveProperty<int> MaxHP { get; }
-    public ReadOnlyReactiveProperty<int> Armor { get; }
-    public ReadOnlyReactiveProperty<int> MaxArmor { get; }
-    public ReadOnlyReactiveProperty<Sprite> PartyIcon { get; }
-    public ReadOnlyReactiveProperty<Sprite> Avatar { get; }
-    public ReadOnlyReactiveProperty<string> HealthDisplay { get; }
+    public string Name { get; }
+    public int HP { get; }
+    public int MaxHP { get; }
+    public int Armor { get; }
+    public int MaxArmor { get; }
+    public Sprite PartyIcon { get; }
+    public Sprite Portrait { get; }
+    
     public IObservableCollection<Ability> Abilities { get; }
     public IObservableCollection<Modification> Modifications { get; }
 
