@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PartyConfigDefault
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: f1ce9d976a70478e908bb5fd9cff9a85, type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.size
+    value: 6
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[0]._name
+    value: Thorgar Ironfist
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[0]._hp
+    value: 200
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[0]._armor
+    value: 30
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[0]._abilitySize
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[0]._partyIcon
+    value: 
+    objectReference: {fileID: 21300000, guid: b5d21dfe057e2a34ebf7d1c98dfdff80, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[0]._portrait
+    value: 
+    objectReference: {fileID: 21300000, guid: 1c76f62403e443c459e10c6fc226ec70, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[1]._name
+    value: Varek Mornblade
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[1]._hp
+    value: 100
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[1]._armor
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[1]._abilitySize
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[1]._partyIcon
+    value: 
+    objectReference: {fileID: 21300000, guid: e4f791ea3bbc52340b67f9edbd4f404f, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[1]._portrait
+    value: 
+    objectReference: {fileID: 21300000, guid: 9756e1025ef844b40a2851d2440e79a2, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[2]._name
+    value: Elara Veynthrix
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[2]._hp
+    value: 120
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[2]._armor
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[2]._abilitySize
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[2]._partyIcon
+    value: 
+    objectReference: {fileID: 21300000, guid: a8d8fb53dc6e74740955ba5b7c45b65a, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[2]._portrait
+    value: 
+    objectReference: {fileID: 21300000, guid: aaeb05560f898fe488daf8f56c5c8322, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[3]._name
+    value: Orion Vanthelis
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[3]._hp
+    value: 100
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[3]._armor
+    value: 25
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[3]._abilitySize
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[3]._partyIcon
+    value: 
+    objectReference: {fileID: 21300000, guid: 0be5318bf1c35404d84fa07a860ff9e3, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[3]._portrait
+    value: 
+    objectReference: {fileID: 21300000, guid: 85f5affcaf5a28a4cb3c99e8b2f5cd86, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[4]._name
+    value: Malric Shadowseer
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[4]._hp
+    value: 100
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[4]._armor
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[4]._abilitySize
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[4]._partyIcon
+    value: 
+    objectReference: {fileID: 21300000, guid: 273e11bbfe1250349b1b0718adef764e, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[4]._portrait
+    value: 
+    objectReference: {fileID: 21300000, guid: f7dc1c8081073804a81e381bddf5a981, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[5]._name
+    value: Borin Steelrage
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[5]._hp
+    value: 150
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[5]._armor
+    value: 10
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[5]._abilitySize
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[5]._partyIcon
+    value: 
+    objectReference: {fileID: 21300000, guid: 53cdf0cd5fb275e4fa75b3ed48d9ba79, type: 3}
+  - target: {fileID: 0}
+    propertyPath: _characters.Array.data[5]._portrait
+    value: 
+    objectReference: {fileID: 21300000, guid: 95ce56172887d754f831a408495f03c3, type: 3}
+  m_ExcludedProperties: []

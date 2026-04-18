@@ -9,8 +9,7 @@ public class ModificationsConfig : ScriptableObject
 
     public IEnumerable<Modification> GetModifications()
     {
-        if (_modifications == null || _modifications.Count == 0)
-            return new List<Modification>();
+        if (_modifications == null || _modifications.Count == 0) return new List<Modification>();
 
         var count = Random.Range(0, _modifications.Count + 1);
         var selectedModifications = new List<Modification>();

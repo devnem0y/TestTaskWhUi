@@ -13,15 +13,39 @@ MonoBehaviour:
   m_Name: Party
   m_EditorClassIdentifier: 
   _characters:
-  - _name: Hero
+  - _name: Thorgar Ironfist
     _hp: 200
+    _armor: 30
+    _abilitySize: 0
+    _partyIcon: {fileID: 21300000, guid: b5d21dfe057e2a34ebf7d1c98dfdff80, type: 3}
+    _portrait: {fileID: 21300000, guid: 1c76f62403e443c459e10c6fc226ec70, type: 3}
+  - _name: Varek Mornblade
+    _hp: 100
     _armor: 10
     _abilitySize: 0
-    _partyIcon: {fileID: 21300000, guid: c8db91dee9f35c842ae95f194b3d8607, type: 3}
-    _portrait: {fileID: 21300000, guid: 6b662e4b15e72b64ab053c2bf964bb64, type: 3}
-  - _name: Pers
+    _partyIcon: {fileID: 21300000, guid: e4f791ea3bbc52340b67f9edbd4f404f, type: 3}
+    _portrait: {fileID: 21300000, guid: 9756e1025ef844b40a2851d2440e79a2, type: 3}
+  - _name: Elara Veynthrix
+    _hp: 120
+    _armor: 10
+    _abilitySize: 0
+    _partyIcon: {fileID: 21300000, guid: a8d8fb53dc6e74740955ba5b7c45b65a, type: 3}
+    _portrait: {fileID: 21300000, guid: aaeb05560f898fe488daf8f56c5c8322, type: 3}
+  - _name: Orion Vanthelis
+    _hp: 100
+    _armor: 25
+    _abilitySize: 0
+    _partyIcon: {fileID: 21300000, guid: 0be5318bf1c35404d84fa07a860ff9e3, type: 3}
+    _portrait: {fileID: 21300000, guid: 85f5affcaf5a28a4cb3c99e8b2f5cd86, type: 3}
+  - _name: Malric Shadowseer
+    _hp: 100
+    _armor: 10
+    _abilitySize: 0
+    _partyIcon: {fileID: 21300000, guid: 273e11bbfe1250349b1b0718adef764e, type: 3}
+    _portrait: {fileID: 21300000, guid: f7dc1c8081073804a81e381bddf5a981, type: 3}
+  - _name: Borin Steelrage
     _hp: 150
     _armor: 10
     _abilitySize: 0
-    _partyIcon: {fileID: 21300000, guid: 9329887211b75d545ac5876f47799790, type: 3}
-    _portrait: {fileID: 21300000, guid: 5da001982063c7a479d5cdd0c3ebfd4b, type: 3}
+    _partyIcon: {fileID: 21300000, guid: 53cdf0cd5fb275e4fa75b3ed48d9ba79, type: 3}
+    _portrait: {fileID: 21300000, guid: 95ce56172887d754f831a408495f03c3, type: 3}
