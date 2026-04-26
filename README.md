@@ -1,1 +1,1 @@
-build находится в release
+build находится в releases
