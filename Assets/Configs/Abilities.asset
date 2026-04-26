@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8975480d99b04b72b222c4d0364f13a1, type: 3}
+  m_Name: Abilities
+  m_EditorClassIdentifier: 
+  abilities:
+  - _name: Assail
+    _icon: {fileID: 21300000, guid: a2af0d14c606c8240bf2c1aa54fa1605, type: 3}
+    _compatibleModificationTypes: 0000000001000000
+  - _name: Blade Shroud
+    _icon: {fileID: 21300000, guid: 397037be7ac3ebe4e9795fcdad09981d, type: 3}
+    _compatibleModificationTypes: 00000000
+  - _name: Trembling Voice
+    _icon: {fileID: 21300000, guid: 174c1f74b81e13243a083e7989812317, type: 3}
+    _compatibleModificationTypes: 03000000
+  - _name: Bring it Down!
+    _icon: {fileID: 21300000, guid: 343068e14d268f948b960b77bdcef7b9, type: 3}
+    _compatibleModificationTypes: 0100000003000000
+  - _name: Syphon Life
+    _icon: {fileID: 21300000, guid: c88e6a3b9e5772044ad413999fd414af, type: 3}
+    _compatibleModificationTypes: 03000000
+  - _name: Despair
+    _icon: {fileID: 21300000, guid: f656dbaa52c4d40439159fea74463649, type: 3}
+    _compatibleModificationTypes: 02000000
+  - _name: Blade Shroud
+    _icon: {fileID: 21300000, guid: 611c32db01b985c4585a656d80bc8cb7, type: 3}
+    _compatibleModificationTypes: 020000000300000004000000
+  - _name: Get Back In Fight
+    _icon: {fileID: 21300000, guid: 682fe847f19a0e244839ec08965dadf2, type: 3}
+    _compatibleModificationTypes: 0100000003000000
+  - _name: Trembling Voice
+    _icon: {fileID: 21300000, guid: 4322083bcab68eb46af3b1972932a9ff, type: 3}
+    _compatibleModificationTypes: 00000000
+  - _name: Offhand Shot
+    _icon: {fileID: 21300000, guid: f627d544ac7de9d4bb6f77c42cf7e851, type: 3}
+    _compatibleModificationTypes: 01000000
+  - _name: Take Aim!
+    _icon: {fileID: 21300000, guid: 3c6bfa8da1f1bb14c993618ee0f54ff1, type: 3}
+    _compatibleModificationTypes: 0400000000000000
+  - _name: Offhand Shot
+    _icon: {fileID: 21300000, guid: 1cbfa9ca04758084b9ad1912f2be680c, type: 3}
+    _compatibleModificationTypes: 000000000200000003000000
+  - _name: Bring it Down!
+    _icon: {fileID: 21300000, guid: 04ec78749b4ff454bad6c7782e17c4fc, type: 3}
+    _compatibleModificationTypes: 000000000100000004000000
+  - _name: Blade Shroud
+    _icon: {fileID: 21300000, guid: 5345ef92ce39bbc4b8586cf2689bbc6a, type: 3}
+    _compatibleModificationTypes: 04000000
+  - _name: Ability_15_Test
+    _icon: {fileID: 21300000, guid: 5345ef92ce39bbc4b8586cf2689bbc6a, type: 3}
+    _compatibleModificationTypes: 04000000
