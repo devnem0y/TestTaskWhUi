@@ -1,1 +1,1 @@
-build находится в releases
+Build находится в [releases](https://github.com/devnem0y/TestTaskWhUi/releases)
