@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.29803923}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: -26.54, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -224,6 +224,8 @@ MonoBehaviour:
   _imgIcon: {fileID: 3476985955801550200}
   _imgFrameSelected: {fileID: 7746230388090500031}
   _imgBoard: {fileID: 8006126081814654335}
+  _colorNormal: {r: 1, g: 1, b: 1, a: 0.2}
+  _colorCompatible: {r: 0.9719956, g: 1, b: 0, a: 0.2}
 --- !u!1 &4056579164979430739
 GameObject:
   m_ObjectHideFlags: 0

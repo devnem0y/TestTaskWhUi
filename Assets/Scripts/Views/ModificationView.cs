@@ -14,6 +14,8 @@ public class ModificationView : ViewBase<IModificationViewModel>
     [SerializeField] private Image _imgIcon;
     [SerializeField] private Image _imgFrameSelected;
     [SerializeField] private Image _imgBoard;
+    [SerializeField] private Color _colorNormal;
+    [SerializeField] private Color _colorCompatible;
 
     protected override void OnViewModelSet()
     {
@@ -68,7 +70,7 @@ public class ModificationView : ViewBase<IModificationViewModel>
     
     private void UpdateCompatibilityVisual(bool hasCompatible)
     {
-        _imgBoard.color = hasCompatible ? Color.yellow : Color.white;
+        _imgBoard.color = hasCompatible ? _colorCompatible : _colorNormal;
     }
     
     private void UpdateHoverVisual(bool isHovered)
