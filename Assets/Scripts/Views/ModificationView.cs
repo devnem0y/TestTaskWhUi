@@ -70,7 +70,8 @@ public class ModificationView : ViewBase<IModificationViewModel>
     
     private void UpdateCompatibilityVisual(bool hasCompatible)
     {
-        _imgBoard.color = hasCompatible ? _colorCompatible : _colorNormal;
+        _imgBoard.color = hasCompatible && !ViewModel.DragDropService.IsDragging.CurrentValue 
+            ? _colorCompatible : _colorNormal;
     }
     
     private void UpdateHoverVisual(bool isHovered)
